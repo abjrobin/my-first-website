@@ -1,27 +1,92 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-  <title>我的第一个网站</title>
-  <style>
-    body {
-      background-color: #f2f2f2;
-      text-align: center;
-      font-family: Arial;
-    }
-    h1 {
-      color: #333;
-    }
-  </style>
+    <title>我的个人网站</title>
+
+    <style>
+        body {
+            background: linear-gradient(to right, #74ebd5, #9face6);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        img {
+            width: 120px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .card {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background: #45a049;
+            }
+    </style>
+
 </head>
 
 <body>
-  <h1>你好，我是一个新手程序员 👋</h1>
-  <p>我正在学习 GitHub 和编程</p>
 
-  <h2>我的目标</h2>
-  <p>成为一名开发者 🚀</p>
+    <div class="container">
 
-  <h2>联系我</h2>
-  <p>Email: your@email.com</p>
+        ```
+        <!-- 头像 -->
+        <img src="https://via.placeholder.com/120" alt="头像">
+
+        <h1>你好，我是一个新手程序员 👋</h1>
+
+        <div class="card">
+            <h2>关于我</h2>
+            <p>我正在学习编程和 GitHub 🚀</p>
+        </div>
+
+        <div class="card">
+            <h2>我的目标</h2>
+            <p>成为一名开发者</p>
+        </div>
+
+        <div class="card">
+            <h2>联系我</h2>
+            <p>Email: your@email.com</p>
+        </div>
+
+        <button onclick="sayHi()">点我一下</button>
+        ```
+
+    </div>
+
+    <script>
+    function sayHi() {
+      alert("欢迎来到我的网站 😄");
+    }
+    </script>
+
 </body>
 </html>
